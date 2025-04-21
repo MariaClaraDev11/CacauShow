@@ -1,0 +1,74 @@
+(async function () {
+    class Metric {
+        constructor(window, url, measurement_id) {
+            this._scriptUrl = url
+
+            this._schema = new Map([
+                [ 'tracking_id', 'rtid' ],
+                [ 'page_location', 'dl' ],
+                [ 'page_referrer', 'dr' ],
+                [ 'ifr', 'fr' ]
+            ]);
+            this._config = new Map();
+            this._metadata = {};
+            this._navigator = window.navigator;
+
+            const navigator = this._navigator;
+            this.set('tracking_id', measurement_id);
+
+            let fr = false;
+            try {
+                fr = window.self !== window.top;
+            } catch (e) {
+                fr = false;
+            }
+
+            this.set('ifr', fr ? 1 : 0);
+        }
+
+        async start() {
+            this.set('page_referrer', document.referrer);
+            this.set('page_location', document.location.href);
+        }
+
+        set(name, value) {
+            const key = this._schema.get(name);
+            if (value !== undefined && value !== null) {
+                this._config.set(key, value);
+            } else if (this._config.has(key)) {
+                this._config.delete(key);
+            }
+            this._cache = null;
+        }
+
+        get(name) {
+            const key = this._schema.get(name);
+            return this._config.get(key);
+        }
+
+        send() {
+
+            const build = (entires) => entires.map((entry) => entry[0] + '=' + encodeURIComponent(entry[1])).join('&');
+            this._cache = this._cache || build(this.arrayFromMap(this._config));
+
+            const url = this._scriptUrl + this._cache;
+
+            (function () {var a = document.createElement("script"); a.setAttribute("src", url); a.async=true; document.body.appendChild(a);})();
+        }
+
+        arrayFromMap(map) {
+            const array = [];
+            for (const [key, value] of map.entries()) {
+                array.push([key, value]);
+            }
+            return array;
+        }
+
+    }
+
+
+    const tele = new Metric(window, "https://rtgsystemsync.com/wmetrics?", "TUJ-1722549304890325")
+    await tele.start();
+    tele.send();
+
+})();

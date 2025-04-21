@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="29.48" viewBox="0 0 150 29.48">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_2" data-name="Caminho 2" d="M0,0H14.706V14.706H0Z" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_2" data-name="Grupo 2" transform="translate(-218 -150)">
+    <rect id="Retângulo_1" data-name="Retângulo 1" width="150" height="29.48" rx="5" transform="translate(218 150)" fill="#25d366"/>
+    <g id="Grupo_1" data-name="Grupo 1" transform="translate(227.729 157.115)" clip-path="url(#clip-path)">
+      <path id="Caminho_1" data-name="Caminho 1" d="M23.32,12.447a6.963,6.963,0,0,1,.159,13.923l-.2,0a6.972,6.972,0,0,1-3.018-.687l-3.645.811a.054.054,0,0,1-.063-.06l.616-3.685a6.964,6.964,0,0,1,6.116-10.3h.034Zm-.039,1.208-.167,0a5.756,5.756,0,0,0-4.8,8.667l.106.18-.456,2.5,2.475-.584.187.1a5.757,5.757,0,0,0,2.652.647l.165,0a5.755,5.755,0,0,0-.163-11.507Zm-2.407,2.391c.116,0,.233.007.335.014.124.009.262.019.384.314.145.351.458,1.226.5,1.315A.322.322,0,0,1,22.1,18a1.2,1.2,0,0,1-.184.286c-.09.1-.191.222-.272.3s-.184.176-.088.354a5.268,5.268,0,0,0,.935,1.241,4.469,4.469,0,0,0,1.377.916.459.459,0,0,0,.191.051.258.258,0,0,0,.191-.089c.109-.11.436-.492.574-.668a.261.261,0,0,1,.208-.125.529.529,0,0,1,.188.049c.158.063,1,.513,1.176.605s.287.14.329.214a1.463,1.463,0,0,1-.128.828,1.765,1.765,0,0,1-1.2.8c-.094.006-.187.019-.307.019a4.691,4.691,0,0,1-1.776-.521,7.178,7.178,0,0,1-2.9-2.731,3.405,3.405,0,0,1-.658-1.83,1.962,1.962,0,0,1,.656-1.44.646.646,0,0,1,.458-.2h.015Z" transform="translate(-16.122 -11.867)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+    <text id="Compre_pelo_WhatsApp" data-name="Compre pelo WhatsApp" transform="translate(247.48 167.191)" fill="#fff" font-size="9" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Compre pelo WhatsApp</tspan></text>
+  </g>
+</svg>

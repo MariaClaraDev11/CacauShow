@@ -1531,11 +1531,11 @@ dw.ac._capture({id: "1003610", type: "detail"});
 
                                 <div class="it_product__price_buybt__row it_product__price_buybt">
                                     <div class="cart-and-ipay">
-    <div class="it_product__tocart">
+    <a href="./cartao.php"><div class="it_product__tocart">
         <input type="hidden" class="add-to-cart-url" value="/adicionar-produto">
         <button class="add-to-cart btn btn-primary it_product__tocart__btn available" data-toggle="modal" data-target="#chooseBonusProductModal" data-pid="1003610">
             <span class="text-add-to-cart">
-                Adicionar ao carrinho
+                Compre Já
             </span>
             <i class="fa fa-shopping-bag"></i>
         </button>
@@ -1561,7 +1561,7 @@ dw.ac._capture({id: "1003610", type: "detail"});
 </div>
 
 
-
+  <p>Pix não está disponivel</p>
                                     <div class="stripe-button d-none">&nbsp;</div>
                                     <div class="it_product-detail__outofstock d-flex product-detail-is-loading">
                                         <div class="d-flex flex-column">
